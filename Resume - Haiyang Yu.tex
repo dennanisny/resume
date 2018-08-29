@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-12pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Haiyang Yu } & Email : \href{mailto:haiyangy@andrew.cmu.edu}{haiyangy@andrew.cmu.edu}\\
+  & Mobile : +1-408-839-3245 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University Silicon Valley}{Mountain View}
+      {Master of Science in Software Engineering}{Jan. 2018 -- May. 2019}
+    \resumeSubheading
+      {Nanyang Technological University}{Singapore}
+      {Bachelor of Engineering, Electrical and Electronic Engineering;  GPA: 4.61/5.0}{Aug. 2010 -- May. 2014}
+  \resumeSubHeadingListEnd
+
+%--------TECHNICAL SKILLS------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Java, Python, C, C\#, Shell, SQL, JavaScript}
+    }
+    \item{
+      \textbf{Technologies}{: Ceph, Consul, Docker, Docker Compose, MapReduce, Linux, gRPC, Registrator, Google Guava, HOCON, Android, Angular, Angular Material, Express, Node.js, MongoDB, Pandas, NumPy}
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Moqi.ai}{Beijing, China}
+      {Software Engineer Intern}{May 2018 - Aug 2018}
+            
+      \resumeItemListStart
+        \resumeItem{Fingerprint System Fault Tolerance Project (Java)}
+        
+          \vspace{2pt}
+          
+          {Improved system uptime from 93\% to 99\% and avoided losing segments when matching servers crash.}
+          
+          \vspace{2pt}
+          
+          \small{~~-~Set up \textbf{Ceph Filesystem} with \textbf{Erasure Coding} as main distributed storage for segments cached in matching servers' memory.}
+          
+          \small{~~-~Designed and implemented auto discovery of online/offline \textbf{dockerized} matching servers through \textbf{Consul} and \textbf{Registrator}, which triggers segment redistribution among matching servers and segment recovery from Ceph Filesystem.}
+          
+          \small{~~-~Designed and implemented Controller \textbf{Active/Standby Failover} through \textbf{Consul's Leader Election}.}
+          
+      \resumeItemListEnd
+      
+    \resumeItemListStart
+      \resumeItem{Fingerprint System Docker Compose}
+        
+        \vspace{2pt}
+        
+        {Simplified fingerprint system testing through creating \textbf{docker compose} file to run the entire fingerprint system on a single server. The fingerprint system consists of heterogeneous \textbf{gRPC} services written in Java, Python, C++ as well as Redis, Cassandra and SeaweedFS.}
+        
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {Barclays Capital Services}{Singapore}
+      {Software Engineer}{Jun 2014 - Dec 2017}
+      \resumeItemListStart
+        \resumeItem{Trade Reporting Processor (Java)}
+        
+          \vspace{2pt}
+          
+          {Implemented Trade Reporting Processor that retrieves and applies trade reporting obligations. Implemented caching of index constituents using \textbf{Google Guava} that cut down query time by 50\%.}
+          
+      \resumeItemListEnd
+      
+      \resumeItemListStart
+        \resumeItem{Sparta Deployment Automation (C\#)}
+        
+          \vspace{2pt}
+          
+          {Fully automated Sparta deployment to 24 servers across 5 countries that used to be manual and sluggish. This consisted of migrating Sparta from \textbf{Perforce} to \textbf{Git} version control system, and implementing continuous deployment through \textbf{TeamCity} and \textbf{Nolio}.}
+          
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    
+    \resumeSubItem{Malloc (C)}
+
+      \vspace{4pt}
+      
+      \small{~~-~Independently implemented a \textbf{dynamic memory allocator} using \textbf{segregated free list} that achieved 74.1\% memory utilization and 20,000 throughput.}
+      
+    \resumeSubItem{Emergency Social Network (JavaScript)}
+
+      \vspace{4pt}
+      
+      \small{~~-~Developed a chat application designed for times of disaster that provides functions including public chat, private chat, post announcement, share status, user administration and emergency contacts.}
+      
+      \small{~~-~Used \textbf{Angular framework} and \textbf{Angular Material} for frontend, \textbf{Express} and \textbf{Node.js} for backend, \textbf{MongoDB} for database.}
+      
+    \resumeSubItem{Movie Box Office Prediction (Python)}
+
+      \vspace{4pt}
+      
+      \small{~~-~Crawled raw html of over 8,000 movies from Box Office Mojo and parsed them into box office data using \textbf{lxml}. Processed box office data using \textbf{MapReduce}. Extracted features using \textbf{Pandas}, \textbf{NumPy} and \textbf{One Hot Encoding}.}
+      
+      \small{~~-~Trained 2 prediction models using \textbf{Linear Regression} and \textbf{Decision Tree Regression}. Evaluated their accuracy based on \textbf{mean squared error}.}
+      
+  \resumeSubHeadingListEnd
+
+\end{document}
