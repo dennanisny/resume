@@ -102,7 +102,7 @@
       \textbf{Languages}{: Java, Python, C, Shell, HTML, JavaScript, SQL}
     }
     \item{
-      \textbf{Technologies}{: Android, Angular, Angular Material, Ceph, Consul, Docker, Docker Compose, Express.js, Gradle, gRPC, Google Guava, HOCON, Linux, MapReduce, MongoDB, Node.js, NumPy, Pandas, Registrator}
+      \textbf{Technologies}{: Docker, Linux, React, Angular, Node.js, MongoDB, Ceph, Consul, Android, Protocol Buffers, gRPC, Google Guava, NumPy, Pandas}
     }
   \resumeSubHeadingListEnd
 
@@ -122,17 +122,14 @@
             
       \resumeItemListStart
       
-        \resumeItem{Ceph Filesystem}
+        \resumeItem{Distributed Storage}
           {Set up \textbf{Ceph Filesystem} with \textbf{Erasure Coding} as main distributed storage for segments cached in matching servers' memory.}
       
-        \resumeItem{Fingerprint System Docker Compose}
-          {Simplified fingerprint system testing through creating \textbf{docker compose} file to run the entire fingerprint system on a single server. The fingerprint system consists of heterogeneous \textbf{gRPC} services written in Java, Python, C++ as well as Redis, Cassandra and SeaweedFS.}
-          
-        \resumeItem{Matching Server Fault Tolerance}
+        \resumeItem{Fault Tolerance}
           {Designed and implemented auto discovery of online/offline \textbf{dockerized} matching servers through \textbf{Consul} and \textbf{Registrator}, which triggers segment redistribution among matching servers and segment recovery from Ceph Filesystem.}
-          
-        \resumeItem{Controller Fault Tolerance}
-          {Designed and implemented Controller \textbf{Active/Standby Failover} through \textbf{Consul's Leader Election}.}
+                
+        \resumeItem{Docker Compose}
+          {Simplified fingerprint system testing through creating \textbf{docker compose} file to run the entire fingerprint system on a single server. The fingerprint system consists of heterogeneous \textbf{gRPC} services written in Java, Python, C++ as well as Redis, Cassandra and SeaweedFS.}
         
       \resumeItemListEnd
       
@@ -141,13 +138,13 @@
       {Software Engineer}{Jun 2014 - Dec 2017}
       \resumeItemListStart
         \resumeItem{Trade Reporting Processor}
-          {Developed Trade Reporting Processor that retrieves and applies trade reporting obligations. Implemented caching of index constituents using \textbf{Google Guava} that cut down query time by 50\%.}
+          {Developed Trade Reporting Processor using \textbf{Google Guava} to cache stock indices which improved performance by 2x.}
           
         \resumeItem{Market Object and Static Services}
-          {Developed a greenfield market data calculation application which used \textbf{Redis} for caching, \textbf{Elasticsearch} for logging and \textbf{Akka} for concurrency.}
+          {Developed a greenfield market data calculation application which used \textbf{Redis} for caching, \textbf{Elasticsearch} for logging and \textbf{Akka} for concurrent processing.}
           
         \resumeItem{Sparta Automatic Deployment}
-          {Fully automated Sparta deployment to 24 servers across 5 countries that used to be manual and sluggish. This consisted of migrating Sparta from \textbf{Perforce} to \textbf{Git} version control system, and implementing continuous deployment through \textbf{TeamCity} and \textbf{Nolio}.}
+          {Fully automated deployment workflow to 24 servers across 5 countries that consisted of migrating Sparta from \textbf{Perforce} to \textbf{Git} version control system, and implementing continuous deployment through \textbf{TeamCity} and \textbf{Nolio}.}
 
       \resumeItemListEnd
       
@@ -157,20 +154,20 @@
 \section{Projects}
   \resumeSubHeadingListStart
   
-    \resumeSubItem{Emergency Social Network (HTML, JavaScript)}
-      {Developed a chat application designed for times of disaster that provides functions including public chat, private chat, post announcement, share status, user administration and emergency contacts. Used \textbf{Angular} and \textbf{Angular Material} for frontend, \textbf{Express.js} and \textbf{Node.js} for backend, \textbf{MongoDB} for database.}
-      
-      \resumeSubItem{Online Bulletin Board (React, Redux, Tornado)}
-      {Implemented post sorting by tag and post searching features using \textbf{React}, \textbf{Redux} and \textbf{Tornado}.}
-    
+    \resumeSubItem{Online Bulletin Board (React, Redux, Tornado)}
+      {Implemented post sorting by tag and post searching features using \textbf{React}, \textbf{Redux} and \textbf{Tornado}.}  
+  
     \resumeSubItem{Face Fengshui App (Android)}
       {Independently developed an \textbf{Android} application that performs face recognition on a person’s selfie to predict his/her fortune and temperament based on face reading techniques.}
-
+        
     \resumeSubItem{Malloc (C)}
       {Independently implemented a \textbf{dynamic memory allocator} using \textbf{segregated free list} that achieved 74.1\% memory utilization and 20,000 throughput.}
-      
+  
+    \resumeSubItem{Emergency Social Network (Angular, Node.js, MongoDB)}
+      {Developed a chat application designed for times of disaster that provides functions including public chat, private chat, post announcement, share status, user administration and emergency contacts. Used \textbf{Angular} and \textbf{Angular Material} for frontend, \textbf{Express.js} and \textbf{Node.js} for backend, \textbf{MongoDB} for database.}
+
     \resumeSubItem{Movie Box Office Prediction (Python)}
-      {Crawled raw html of over 8,000 movies from Box Office Mojo and parsed them into meaningful data using \textbf{lxml}. Processed 30 million pieces of movie information using \textbf{MapReduce}. Extracted features using \textbf{Pandas}, \textbf{NumPy} and \textbf{One Hot Encoding}. Trained 2 prediction models using \textbf{Linear Regression} and \textbf{Decision Tree Regression}. Compared their accuracy based on \textbf{mean squared error}.}
+      {Crawled raw html of over 8,000 movies from Box Office Mojo and parsed them into meaningful data using \textbf{lxml}. Processed 30 million pieces of movie information using \textbf{MapReduce}. Extracted features using \textbf{Pandas}, \textbf{NumPy} and \textbf{One Hot Encoding}. Compared prediction accuracy between models trained using \textbf{Linear Regression} and \textbf{Decision Tree Regression}.}
 
   \resumeSubHeadingListEnd
 
