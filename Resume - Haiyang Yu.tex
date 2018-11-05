@@ -99,10 +99,10 @@
 \section{Technical Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Languages}{: Java, Python, C, Shell, HTML, JavaScript, SQL}
+      \textbf{Languages}{: Java, Python, C, Shell, JavaScript, SQL}
     }
     \item{
-      \textbf{Technologies}{: Docker, Linux, React, Angular, Node.js, MongoDB, Ceph, Consul, Android, Protocol Buffers, gRPC, Google Guava, NumPy, Pandas}
+      \textbf{Technologies}{: Docker, Linux, Ceph, Consul, Registrator, React, Angular, Android, Redux, Node.js, MongoDB, Protocol Buffers, gRPC, Google Guava}
     }
   \resumeSubHeadingListEnd
 
@@ -123,7 +123,7 @@
       \resumeItemListStart
       
         \resumeItem{Distributed Storage}
-          {Set up \textbf{Ceph Filesystem} with \textbf{Erasure Coding} as main distributed storage for segments cached in matching servers' memory.}
+          {Set up \textbf{Ceph Filesystem} with \textbf{Erasure Coding} on SSD as persistent distributed storage for segments cached in individual matching servers' memory.}
       
         \resumeItem{Fault Tolerance}
           {Designed and implemented auto discovery of online/offline \textbf{dockerized} matching servers through \textbf{Consul} and \textbf{Registrator}, which triggers segment redistribution among matching servers and segment recovery from Ceph Filesystem.}
@@ -153,15 +153,15 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
+
+    \resumeSubItem{Malloc (C)}
+      {Independently implemented a \textbf{dynamic memory allocator} using \textbf{segregated free list} that achieved 74.1\% memory utilization and 20,000 throughput.}
   
     \resumeSubItem{Online Bulletin Board (React, Redux, Tornado)}
       {Implemented post sorting by tag and post searching features using \textbf{React}, \textbf{Redux} and \textbf{Tornado}.}  
   
     \resumeSubItem{Face Fengshui App (Android)}
       {Independently developed an \textbf{Android} application that performs face recognition on a person’s selfie to predict his/her fortune and temperament based on face reading techniques.}
-        
-    \resumeSubItem{Malloc (C)}
-      {Independently implemented a \textbf{dynamic memory allocator} using \textbf{segregated free list} that achieved 74.1\% memory utilization and 20,000 throughput.}
   
     \resumeSubItem{Emergency Social Network (Angular, Node.js, MongoDB)}
       {Developed a chat application designed for times of disaster that provides functions including public chat, private chat, post announcement, share status, user administration and emergency contacts. Used \textbf{Angular} and \textbf{Angular Material} for frontend, \textbf{Express.js} and \textbf{Node.js} for backend, \textbf{MongoDB} for database.}
