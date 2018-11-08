@@ -38,7 +38,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large
+  \vspace{-0pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
@@ -99,13 +99,28 @@
 \section{Technical Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Languages}{: Java, Python, C, Shell, JavaScript, SQL}
+      \textbf{Languages}{: C, Java, Python, Shell, SQL}
     }
     \item{
-      \textbf{Technologies}{: Docker, Linux, React, Angular, Node.js, MongoDB, Ceph, Consul, Registrator, Android, Protocol Buffers, gRPC, Google Guava, NumPy, Pandas}
+      \textbf{Technologies}{: Android, Docker, Linux, Ceph, Consul, Registrator, Protocol Buffers, gRPC, Google Guava, NumPy, Pandas}
     }
   \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubItem{Malloc (C)}
+      {Independently implemented a \textbf{dynamic memory allocator} using \textbf{segregated free list} that achieved 74.1\% memory utilization and 20,000 throughput.}
+
+    \resumeSubItem{Face Fengshui App (Android)}
+      {Independently developed an \textbf{Android} application that performs face recognition on a person’s selfie to predict his/her fortune and temperament based on face reading techniques.}      
+
+    \resumeSubItem{Movie Box Office Prediction (Python)}
+      {Crawled raw html of over 8,000 movies from Box Office Mojo and parsed them into meaningful data using \textbf{lxml}. Processed 30 million pieces of movie information using \textbf{MapReduce}. Extracted features using \textbf{Pandas}, \textbf{NumPy} and \textbf{One Hot Encoding}. Compared prediction accuracy between models trained using \textbf{Linear Regression} and \textbf{Decision Tree Regression}.}
+  
+  \resumeSubHeadingListEnd
+  
 %-----------WORK EXPERIENCE-----------------
 \section{Work Experience}
   \resumeSubHeadingListStart
@@ -148,27 +163,6 @@
 
       \resumeItemListEnd
       
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-  
-    \resumeSubItem{Online Bulletin Board (React, Redux, Tornado)}
-      {Implemented post sorting by tag and post searching features using \textbf{React}, \textbf{Redux} and \textbf{Tornado}.}  
-  
-    \resumeSubItem{Face Fengshui App (Android)}
-      {Independently developed an \textbf{Android} application that performs face recognition on a person’s selfie to predict his/her fortune and temperament based on face reading techniques.}
-        
-    \resumeSubItem{Malloc (C)}
-      {Independently implemented a \textbf{dynamic memory allocator} using \textbf{segregated free list} that achieved 74.1\% memory utilization and 20,000 throughput.}
-  
-    \resumeSubItem{Emergency Social Network (Angular, Node.js, MongoDB)}
-      {Developed a chat application designed for times of disaster that provides functions including public chat, private chat, post announcement, share status, user administration and emergency contacts. Used \textbf{Angular} and \textbf{Angular Material} for frontend, \textbf{Express.js} and \textbf{Node.js} for backend, \textbf{MongoDB} for database.}
-
-    \resumeSubItem{Movie Box Office Prediction (Python)}
-      {Crawled raw html of over 8,000 movies from Box Office Mojo and parsed them into meaningful data using \textbf{lxml}. Processed 30 million pieces of movie information using \textbf{MapReduce}. Extracted features using \textbf{Pandas}, \textbf{NumPy} and \textbf{One Hot Encoding}. Compared prediction accuracy between models trained using \textbf{Linear Regression} and \textbf{Decision Tree Regression}.}
-
   \resumeSubHeadingListEnd
 
 \end{document}
